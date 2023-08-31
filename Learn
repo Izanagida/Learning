@@ -1,0 +1,70 @@
+local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
+local Window = Library.CreateLib("Build To Survive The Robots", "Midnight")
+ 
+local player = game.Players.LocalPlayer
+local camera = game:GetService("Workspace").CurrentCamera
+local CurrentCamera = workspace.CurrentCamera
+local wtvpp = CurrentCamera.worldToViewportPoint
+local runservice = game:GetService("RunService")
+ 
+local cheatFolder = Instance.new("Folder",workspace)
+cheatFolder.Name = "dook_cheat_storage"
+ 
+local armor_attr = game:GetService("Players").LocalPlayer.ArmorAttributes
+local weapon_attr = game:GetService("Players").LocalPlayer.WeaponsAttributes
+local bot_attr = game:GetService("Players").LocalPlayer.RobotsAttributes
+ 
+local raygunMod = weapon_attr.RayGun
+local flameMod = weapon_attr.Flamethrower
+local swordMod = weapon_attr.Sword
+local staffMod = weapon_attr.Staff
+local defaultbotMod = bot_attr.Default
+local crossbowMod = weapon_attr.Crossbow
+local bluearmorMod = armor_attr.Bluesteel
+ 
+local Tab = Window:NewTab("Weapon")
+            Window:NewTab("Armor")
+            Window:NewTab("Robots")
+            Window:NewTab("Other")
+ 
+local Section = Tab:NewSection("Weapon")
+ 
+Section:NewButton("Inf Flamethrower", "OP Flamethrower", function()
+    UI:Button("Infinite Fuel","for crossbow and flamethrower",function ()
+        flameMod:SetAttribute("Fuel", 1000000)
+        flameMod:SetAttribute("Afterburn", 400)
+        crossbowMod:SetAttribute("Flame",300)
+    print("Clicked")
+  end)
+ 
+    
+local Section = Tab:NewSection("Armor")
+ 
+Section:NewButton("Fast")
+ 
+ 
+Section:NewButton("Godmode")
+ 
+    
+ 
+local Section = Tab:NewSection("Robots")
+ 
+Section:NewButton("Change Robots")
+ 
+ 
+Section:NewButton("Fast Explode")
+ 
+    
+ 
+local Section = Tab:NewSection("Other")
+ 
+Section:NewButton("Esp")
+ 
+Section:NewButton("Tracer")
+ 
+ 
+ 
+  end)
+    
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Babyhamsta/RBLX_Scripts/main/Universal/BypassedDarkDexV3.lua", true))()
+    
